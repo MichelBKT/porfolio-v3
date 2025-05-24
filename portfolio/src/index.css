@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-galaxy-dark text-white font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-galaxy-light text-white hover:bg-galaxy-light/80;
+  }
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+* {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease,
+              fill 0.3s ease;
+}
+
+button, svg, .dark\:bg-gray-950 {
+    transition: all 0.3s ease;
+}
+
+
+@keyframes spin-scale {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) rotate(1440deg);
+    opacity: 0;
+  }
+}
+
+.animate-spin-scale {
+  animation: spin-scale 2s cubic-bezier(0.87,0,.68,1) forwards;
+  border-radius: 9999px !important; /* pour former un point à la fin */
+}
