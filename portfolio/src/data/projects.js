@@ -1,5 +1,40 @@
 export const projects = [
   {
+      id: 'year-end',
+      title: 'RPG HD2D',
+      subtitle: 'en cours',
+      description: 'Ce projet est une démo technique d\'un RPG en 2.5D avec une vue isométrique et un style HD2D, se déroulant dans un monde ouvert.',
+      image: '/images/unrealengine.jpg',
+      technologies: ['Unreal', 'C++', 'Python'],
+      features: [
+      'Moteur de jeu Unreal Engine',
+      'Graphismes HD2D',
+      'Système de combat en tour par tour',
+      'Intelligence artificielle des ennemis locale',
+      'Système de quêtes',
+      ],
+      github: null,
+      demo: null
+  },
+  {
+    id: 'cybersec',
+    title: 'Cybersecurity',
+    subtitle: 'AVRIL - JUIN 25 | TRYHACKME.COM',
+    description: 'Ce projet est une série de défis de cybersécurité sur la plateforme TryHackMe.',
+    image: '/images/tryhackme.png',
+    technologies: ['divers outils de cybersec', 'Linux', 'Python'],
+    features: [
+      'Connaitre les bases de la cybersécurité',
+      'Utilisation de divers outils de cyber sécurité',
+      'Exploitation de vulnérabilités',
+      'Analyse de réseaux et de systèmes',
+      'Cryptographie',
+      'Ingénierie sociale',
+    ],
+    github: null,
+    demo: null
+  },
+  {
     id: 'agilix',
     title: 'Agilix',
     subtitle: 'FEV - AVRIL 25 | WEB - REACT',

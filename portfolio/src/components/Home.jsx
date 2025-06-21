@@ -5,7 +5,7 @@ import Typography from '../components/core/Typography';
 
 const Home = () => {
   const downloadCV = () => {
-    document.location.href = "/CV_Michel_BANCKAERT_v14.pdf";
+    document.location.href = "/CV_Michel_BANCKAERT_v15.pdf";
   };
 
   const redirectToSectionContact = () => {
